@@ -14,10 +14,13 @@
 - Added deduplication logic to add_to_watchlist() in services/watchlist_service.py. Used the same pattern from collection_services.py. 
 **How I verified:**
 - Added a Class "AlreadyInWatchlistError" at the beginning of the file which can be utilized in add_to_watchlist function to raise an exception when film is already in the watchlist. 
+- Ran pytest tests/test_watchlist.py -v and it passed successfully.
 
 ## Comment 3 — Missing test
 **What I did:**
+- Added test_watchlist.py following the same pattern in test_collection.py
 **How I verified:**
+- Ran pytest tests/test_watchlist.py -v and it passed successfully.
 
 ## Comment 4 — Default visibility
 **My position:**
